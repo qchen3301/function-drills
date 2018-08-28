@@ -18,6 +18,11 @@
 //   Expect sumOfNums([])) to equal 0
 
 const sumOfNums = function (numsArray) {
+  let sum = 0
+  for (let i = 0; i <numsArray.length; i++) {
+    sum += numsArray[i]
+  } 
+  return sum
 }
 
 // #2
@@ -60,15 +65,11 @@ const allGreaterThanTen = function (numsArray) {
 //    to equal ['alphabet', 'banana', 'carrot']
 
 const wordsWithAtLeastFiveLetters = function (words) {
-  /*  1.  count the words in each array?
-      2.  record that count
-      3.  break each word into individual letters
-      4.  if the count of those words exceeds 5 -
-      5.  reconstruct that word
-      6.  add it to the final array 
-      7.  return the final array  */
-  
-}
+  let goodWords = []
+  words.forEach( word => 
+    { if (word.length > 5)
+        goodWords.push(word) } )
+  return goodWords }
 
 // #5
 // Input: an array of words
@@ -81,8 +82,12 @@ const wordsWithAtLeastFiveLetters = function (words) {
 //  Expect allStartingWithA([]) to equal true
 
 const allStartingWithA = function (words) {
+  for (let i=0;i<words.length;i++) {
+    if(!words[i].toLowerCase().startsWith('a'))  
+      return false}
 
-  // Your Code Here
+return true
+
 }
 
 // #6
