@@ -14,7 +14,9 @@
   "author": "Matt Brendzel (matt.brendzel@generalassemb.ly)",
   "license": "GPL-3.0",
   "dependencies": {
-    "chai": "^3.5.0",
     "mocha": "^3.2.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0"
   }
 }

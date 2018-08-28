@@ -18,11 +18,7 @@
 //   Expect sumOfNums([])) to equal 0
 
 const sumOfNums = function (numsArray) {
-
-  // Your Code Here
 }
-
-
 
 // #2
 // Input: an array of numbers
@@ -32,9 +28,12 @@ const sumOfNums = function (numsArray) {
 //   Expect numsGreaterThanTen([-1, 0, 1, 9, 9.5, 9.99, 10, 11, 20, 100]) to equal [11, 20, 100]
 
 const numsGreaterThanTen = function (numsArray) {
+  let embiggensTen = []
+  for (let i=0;i<numsArray.length;i++) {
+    if (numsArray[i]>10 )
+      embiggensTen.push(numsArray[i]) }
 
-  // Your Code Here
-}
+    return embiggensTen }
 
 // #3
 // Input: an array of numbers
@@ -61,8 +60,14 @@ const allGreaterThanTen = function (numsArray) {
 //    to equal ['alphabet', 'banana', 'carrot']
 
 const wordsWithAtLeastFiveLetters = function (words) {
-
-  // Your Code Here
+  /*  1.  count the words in each array?
+      2.  record that count
+      3.  break each word into individual letters
+      4.  if the count of those words exceeds 5 -
+      5.  reconstruct that word
+      6.  add it to the final array 
+      7.  return the final array  */
+  
 }
 
 // #5
