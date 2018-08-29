@@ -99,7 +99,10 @@ return true
 //   Expect anyStartingWithB(['apple', 'alligator', 'Arkansas'])) to equal false
 const anyStartingWithB = function (words) {
 
-  // Your Code Here
+  for (let i=0;i<words.length;i++) {
+  	if(words[i].toLowerCase().startsWith('b'))
+  		return true }
+  	return false
 }
 
 // #7
